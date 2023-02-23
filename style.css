@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 1.75rem;
+    margin-top: 1.95rem;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.5rem;
+    margin-bottom: 6.25rem;
+}
+
+.button {
+    margin-top: auto;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    border: 0.125rem solid hsl(0deg, 0%, 100%);
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    width: fit-content;
+    background-color: hsl(0deg, 0%, 100%);
+    color: hsl(0deg, 0%, 0%);
+    margin-top: 8rem;
+    font-size: .9rem;
+    transition: all .3s ease;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7)
+    }
+
+    50% {
+        box-shadow: 0 0 0 7px rgba(255, 82, 82, 0)
+    }
+}
+
+.button:hover {
+    background: transparent;
+    color: #fff;
+}
+
+a {
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 2.625rem;
+    min-height: 31.2844rem;
+    box-shadow: 0 0.063rem 0.188rem rgba(31, 50, 81, 0.12), 0 0.063rem 0.125rem rgba(31, 50, 81, 0.24);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (hover: hover) {
+    main:hover {
+      box-shadow: 0 0.875rem 1.75rem rgba(31, 50, 81, 0.25), 0 0.625rem 0.625rem rgba(31, 50, 81, 0.22);
+    }
+  }
+
+.container-first {
+    background-color: hsl(31, 77%, 52%);
+    box-sizing: border-box;
+    padding: 3rem;
+    width: 19.167rem;
+    height: 31.313rem;
+}
+
+.container-second {
+    background-color: hsl(184, 100%, 22%);
+    box-sizing: border-box;
+    padding: 3rem;
+    width: 19.167rem;
+    height: 31.313rem;
+}
+
+.container-third {
+    background-color: hsl(179, 100%, 13%);
+    box-sizing: border-box;
+    padding: 3rem;
+    width: 19.167rem;
+    height: 31.313rem;
+}
+
+.container-first a {
+    color: hsl(31, 77%, 52%);
+    transition: all .3s ease;
+}
+
+.container-second a {
+    color: hsl(184, 100%, 22%);
+    transition: all .3s ease;
+}
+
+.container-third a {
+    color: hsl(179, 100%, 13%);
+    transition: all .3s ease;
+}
+
+@media only screen and (max-width: 920px) {
+    main {
+        flex-direction: column;
+    }
+
+    .container-first {
+        min-width: 22rem;
+        min-height: 32rem;
+    }
+
+    .container-second {
+        min-width: 22rem;
+        min-height: 32rem;
+    }
+
+    .container-third {
+        min-width: 22rem;
+        min-height: 32rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .button {
+        margin-top: 1rem;
+    }
+}
